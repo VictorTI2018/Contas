@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta do mês</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="header"></header>
+        <main class="content">
+            <section class="section">
+                <div style="flex-basis: 60%;">
+                    <img class="img-contas"
+                        src="https://scproduction.s3.sa-east-1.amazonaws.com/wysiwyg_uploads/cms/images/2019/05/20/12/despesas-fixas-e-variaveis-entenda-e-melhore-o-seu-controle-financeiro5807-zjcx4zmt.jpg"
+                        alt="">
+                </div>
+                <div style="flex-basis: 40%;">
+                    <div class="card">
+                        <div class="card-header">
+                            Dados da conta
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Descrição:</label>
+                                <input type="text" name="descricao" id="descricao" placeholder="Descrição..."
+                                    class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Valor:</label>
+                                <input type="number" name="valor" id="valor" class="form-control" placeholder="Valor...">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+  
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button class="btn btn-success btn-block" id="btnLista">
+                                        Ver Lista
+                                    </button>
+                                </div>
+                                <div class="col-md-3 offset-md-3">
+                                    <button class="btn btn-danger btn-block">Limpar</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-primary btn-block" id="btnRegistrar">Registrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="output">
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
